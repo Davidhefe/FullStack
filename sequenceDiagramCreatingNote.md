@@ -4,7 +4,7 @@ sequenceDiagram
   participant server
     browser->>server:POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    server->>browser: 304 reponse
+    server->>browser: HTML document with new note created
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
